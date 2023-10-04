@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link id='csslink' href="../main.css" rel="stylesheet">
+        <title>Hobbies</title>
+    </head>
+    
+    <body id="index">
+        <header>
+            <h1>My Hobbies</h1>
+            <p id="nameDate">Manuel Pulgar | 2023</p>
+        </header>
+        <nav>
+            <div><a href="../AnimeManga/animeAndManga.html">Anime and Manga</a></div>
+            <div><a href="../VideoGames/videoGames.html">Video Games</a></div>
+        </nav>
+        <aside>
+            <div> </div>
+        </aside>
+        <p id="state">
+            <strong>Thank you for visiting my webpage. 
+            Watching anime, reading manga, and playing video games 
+            is how I pass most of my time</strong><br><br>
+            Click the pictures to learn more about them!
+        </p>
+        <div id="grid-container">
+            <div id="aNm" class="odd">
+                <a href="https://en.wikipedia.org/wiki/One_Piece" target="_blank"><img src="animeAndManga.jpg" alt="Picture of One Piece"class="pic oddPic"></a>
+                <div class="desc oddDesc">One Piece is my favorite anime/manga. <br>
+                The <em>short</em> series is written and illustrated by Eiichiro Oda AKA "Goda". Recently
+                One Piece has gotten a live action adaptation, 8 episodes covering the "East Blue Saga"</div>
+            </div>
+            <div id="vD" class="even">
+                <a href="https://www.rocketleague.com/" target="_blank"><img src="rocketLeague.jpg" alt="Picture of Rocket League" class="pic evenPic"></a>
+                <div class="desc evenDesc">Rocket League came out in 2015. <br>
+                I got the game on launch and have consistently been playing it since. My favorite game mode
+                to play is 2v2s. Rocket League is the only game that my friends and I will do private matches on, which is a big reason
+                as to why I have consistently played it since launch.</div>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div>ManPul &copy;</div>
+        <button onclick="toggleCSS()">Switch Style</button>
+    </footer>
+    <script>
+	    function toggleCSS() {
+          // Obtains the <link> element that links to the css (by using its id).
+          var currentCSS = document.getElementById('csslink');
+
+          // Change the value of href attribute to change the css file.
+          if (currentCSS.getAttribute('href') == '../main.css') {
+            currentCSS.setAttribute('href', '../alternate.css');
+          } else {
+            currentCSS.setAttribute('href', '../main.css');
+          }
+      }
+  </script>
+</html>
