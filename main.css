@@ -1,0 +1,171 @@
+body {
+    background-color: lightgray;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 75px auto 75px;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+    "head head head"
+    "nav statement aside"
+    "nav hobbies aside"
+    "foot foot foot";
+}
+header {
+    background-color: blueviolet;
+    grid-area: head;
+    text-align: center;
+    border-radius: 15px 15px 0px 0px;
+}
+nav {
+    grid-area: nav;
+    font-size: larger;
+    background-color: lavender;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "aNm"
+    "vD";
+}
+aside {
+    display: block;
+    background-color: lavender;
+    grid-area: aside;
+}
+nav > div > a {
+    text-align: center;
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#state {
+    grid-area: statement;
+    margin: 10px;
+    text-align: center;
+}
+footer {
+    display: block;
+    background-color: lightslategray;
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+    grid-area: foot;
+}
+#grid-container {
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    grid-area: hobbies;
+    background-color: black;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "aNm aNm"
+    "vD vD";
+}
+#aNm {
+    grid-area: aNm;
+}
+#vD {
+    grid-area: vD;
+}
+.pic {
+    border-radius: 20px;
+    display: block;
+    grid-area: pic;
+}
+.desc{
+    display: block;
+    grid-area: desc;
+    font-size: 15px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 10px;
+    background: lightpink;
+}
+.oddDesc {
+    border-radius: 0px 10px 10px 0px;
+}
+.evenDesc {
+    border-radius: 10px 0px 0px 10px;
+}
+.oddPic {
+    margin-left: auto;
+}
+.evenPic {
+    margin-right: auto;
+}
+#warning {
+    grid-area: warning;
+    display: block;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+#message {
+    grid-area: message;
+    text-align: center;
+}
+#message2 {
+    grid-area: message2;
+    text-align: center;
+}
+#aNmPage {
+    grid-area: pic;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#aNmGrid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+    "warning"
+    "message"
+    "pic"
+    "message2";
+}
+#vgContainer {
+    background-color: black;
+    border-radius: 10px;
+    margin: 5px;
+    align-content: center;
+    grid-area: hobbies;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+    "saph saph"
+    "oW oW"
+    "r6 r6"
+    "gta gta"
+    "cp77 cp77";
+}
+.odd {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: 
+    "pic desc desc";
+}
+.even {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: 
+    "desc desc pic";
+}
+#saph {
+    grid-area: saph;
+}
+#oW {
+    grid-area: oW;
+}
+#r6 {
+    grid-area: r6;
+}
+#gta {
+    grid-area: gta;
+}
+#cp77 {
+    grid-area: cp77;
+}
